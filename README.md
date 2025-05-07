@@ -1,23 +1,39 @@
-# Movie-releases-app  
-A web app to display the top 20 movie releases this week using the TMDb API, with sorting and search functionality.
+# 🎬 Movie Releases App
 
-## Overview  
-This web application fetches newly released movies from the past week using The Movie Database (TMDb) API.  
-Users can view the **top 20 highest-rated or most popular** movies released in the last 7 days.
+A web app to display the top 20 movie releases from the past week using the TMDb API, with sorting, genre filtering, dark mode, and real-time search.
 
-### Features  
-- 🔑 Enter your TMDb API key to fetch data  
-- 🎬 Displays movie title, release date, rating, overview, and poster  
-- 🔍 Real-time search by movie title  
-- 📊 Sort movies by **Rating** or **Popularity**  
-- 📅 Displays movies released in the past **7 days only**  
-- 🧼 Clean, responsive UI
+## 🔎 Overview  
+This web application fetches and displays newly released movies from the past 7 days using The Movie Database (TMDb) API.  
+Users can browse **the top 20 highest-rated or most popular movies**, filter by genre, and customize their experience with **dark mode** and real-time **search**.
 
-## Setup Instructions  
-1. Go to [TMDb](https://www.themoviedb.org/) and create an account.  
-2. Request an API key from the [API section](https://www.themoviedb.org/settings/api).  
-3. Clone or open this app, and paste your API key into the input field at the top of the page.
+## ✨ Features  
 
-## Hosting  
-This site is hosted via GitHub Pages at:  
-👉 [https://Young-2804.github.io/Movie-releases-app](https://Young-2804.github.io/Movie-releases-app)
+- 🔑 Enter your **TMDb API key** to fetch movie data  
+- 🎬 Displays: movie **title**, **release date**, **rating**, **overview**, and **poster**  
+- 🔍 **Real-time search** by movie title  
+- 📊 **Sort** by:  
+  - Rating (High to Low)  
+  - Popularity  
+  - Release Date (Newest first)  
+- 🎭 **Filter by Genre**  
+- 🌙 **Dark Mode toggle** (with saved preference)  
+- 📅 Only shows movies **released within the past 7 days**  
+- 🎯 **Top 20 results** only (sorted by selected option)  
+- ⚠️ Error handling with styled message UI  
+- 📱 **Responsive** design for mobile
+
+## 🛠 Setup Instructions  
+
+1. Visit [TMDb](https://www.themoviedb.org/) and create an account.  
+2. Go to the [API section](https://www.themoviedb.org/settings/api) and request a **developer API key**.  
+3. Open the site or repository and **paste your API key** into the input field to load the movies.
+
+## 🚀 Live Demo  
+
+👉 Hosted via GitHub Pages:  
+**[https://young-2804.github.io/Movie-releases-app](https://young-2804.github.io/Movie-releases-app)**
+
+## 📁 Repository  
+
+🔗 GitHub Repo:  
+**[https://github.com/Young-2804/Movie-releases-app](https://github.com/Young-2804/Movie-releases-app)**
