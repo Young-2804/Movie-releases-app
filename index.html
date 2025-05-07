@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Today's Movie Releases</title>
+  <title>Top 20 New Releases This Week</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Today's Movie Releases</h1>
+  <h1>Top 20 New Releases This Week<br>
+    <small>(Sorted by Rating – Only the Best)</small>
+  </h1>
 
   <div id="controls">
     <input id="apiKey" type="text" placeholder="Enter your TMDb API key" />
-    
     <button id="loadBtn">Load Movies</button>
+    <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
     <br><br>
+
     <input id="searchInput" type="text" placeholder="Search movie title..." />
+    <br><br>
+
+    <label for="sortOption"><strong>Sort by:</strong></label>
+    <select id="sortOption">
+      <option value="vote_average.desc">Rating (High to Low)</option>
+      <option value="popularity.desc">Popularity</option>
+      <option value="release_date.desc">Release Date (Newest)</option>
+    </select>
+    <br><br>
+
+    <label for="genreSelect"><strong>Filter by Genre:</strong></label>
+    <select id="genreSelect">
+      <option value="">All Genres</option>
+    </select>
   </div>
 
+  <div id="error-message" class="hidden"></div>
   <div id="movies"></div>
 
   <script src="script.js"></script>
