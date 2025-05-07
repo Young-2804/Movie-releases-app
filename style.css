@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#apiKey,
+#searchInput {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#loadBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#loadBtn:hover {
+    background-color: #17a148;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.movie {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.movie h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.movie p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    #apiKey,
+    #searchInput {
+        width: 90%;
+    }
+
+    #movies {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
